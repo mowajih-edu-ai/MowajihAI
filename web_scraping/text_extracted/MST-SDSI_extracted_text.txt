@@ -1,0 +1,144 @@
+--- Page 1 ---
+iques
+
+SCIENCES DES DONNEES ET SYSTEMES INTELLIGENTS
+
+x
+
+tf
+
+Master Sciences et Techn
+
++.OAUE+ OFAL CokCCA Ol AGAHOD | HO
+UNIVERSITE SIDI MOHAMED BEN ABDELLAH DE FES
+
+cud lp Lait) y agutat) dis
++o.7EU.l+ | +C-OO1El A tOlEXEtE] - HO
+FACULTE DES SCIENCES ET TECHNIQUES DE FES
+
+OBJECTIFS DE LA FORMATION
+
+Vobjectif du Master "Sciences des Données et Systemes :
+Intelligents (SDSI}" est d’offrir aux étudiants une formation solide CONDITIONS D’ACCES
+sur les aspects fondamentaux du Data science et de l'intelligence
+artificielle a savoir l'apprentissage automatique, l'ingénierie des
+connaissances, la gestion et l'analyse des données massives et
+variées et les systemes décisionnels. A l'issue de la formation, les
+étudiants auront acquis un socle de connaissances qu’ils
+pourront valoriser sous forme de multiples compétences en
+matiére de démarche scientifique et de techniques de
+lingénieur. La formation est répartie sur plusieurs modules
+répondant au cahier des charges pédagogique et couvrant
+aspect scientifique fondamental, et l’aspect pratique dispensé
+par les travaux pratiques relatifs aux modules envisagés et le
+stage de fin d'études. Le stage est réalisé dans un établissement
+de l'ensemble des entreprises et des laboratoires de recherche
+dont les activités touchent des secteurs socio-économiques ou
+industriels utilisant les systemes informatiques.
+
+L'acces a cette formation du cycle Master en Sciences
+et Techniques a lieu sur étude de dossier et par voie
+de concours, ouvert aux titulaires de la licence dans
+le domaine de la formation ou d’un diplome reconnu
+équivalent et satisfaisant aux criteres d’admission
+préevus dans le descriptif de la filiére. Les critéres
+d’admission sont proposes par |’équipe pédagogique
+de la filiére et spécifiés dans le descriptif de cette
+filiére.
+
+
+--- Page 2 ---
+M.S.T: SCIENCES DES DONNEES ET SYSTEMES INTELLIGENTS (SDS!)
+
+DEBOUCHES
+
+La filigre SDSI répond parfaitement a la problématique de l’employabilité dans la plus part des
+secteurs liés aux technologies de l'information, et contribue par conséquent a la dynamisation
+de la recherche scientifique et du développement socio-économique et industriel. En effet, la
+formation offre a ses lauréats un pré-requis scientifique et technique important et pertinent
+pour assurer une intégration réussie dans le monde professionnel et celui de la recherche
+scientifique. Ainsi, les débouchés de la formation concernent de nombreux métiers liés au
+domaine de |'informatique tels que l'ingénierie logicielle, l’ingénierie des données, Business
+intelligence et datamining, data science, |’ingénierie des connaissances, intelligence
+artificielle, 'administration et sécurité des réseaux et enfin le cloud computing.
+
+ORGANISATION PEDAGOGIQUE
+DU MASTER SCIENCES ET TECHNIQUES (MST)
+
+Semestre $1 Semestre $3
+
+Semestre $2 Semestre $4
+
+- Une filiere MST est un cursus de formation étalée sur 4 semestres.
+
+- Elle comporte:
+
+* Deux premiers semestres d'études en sciences et techniques spécifiques au caractére du
+Master en Sciences et Techniques, pouvant constituer un tronc commun
+
+* Deux derniers semestres de spécialisation, de professionnalisation et de
+recherche-développement.
+
+* Le PFE dure un semestre et se déroule a la fin du cursus de formation apres validation des
+3 premiers semestres.
+
+- Chaque semestre comporte 6 modules;
+
+- Le volume horaire du module est fixé a 56h d’enseignement et d’évaluation;
+
+FACULTE DES SCIENCES ET TECHNIQUES DE FES
+B.P. 2202 — Route d’Imouzzer - FES
+Tél : 212 (535) 60 80 14 - 212 (535) 60 29 53 — Fax : 212 (535) 60 82 14
+
+www.fst-usmba.ac.ma
+
+Contact : Département Informatique
+
+Chef du département : Pr. Azeddine ZAHI
+Coordonnateur de la filiére : Pr. Khalid ABBAD
+
+E-mail : azeddine.zahi@usmba.ac.ma
+E-mail : khalid-abbad@usmba.ac.ma
+
+SEMESTRE 1
+Modules Volume horaire (h)
+Crs | TD TP | AP
+M1:Architectures Logicielles 32 | 0 24
+M2: Intelligence Artificielle 22 | 12 | 16
+M3; Analyse des données 28 | 14 | 14
+M4: Bases e Données NoSQL 34/0 22
+M5: Recherche Opérationnelle 26 | 18 | 12
+Mé: Anglais 28 | 28
+SEMESTRE 2
+Volume horaire (h}
+sia [rs [1D | 1p | AP
+M7: Ecosysteme Hadoop 26 | 8 22
+M8: Machine Learning 30 | 14] 122
+Mi9:Business Intelligence 30 | 12 | 14
+M10:Vision par Ordiateur 32 | 10 | 14
+M11:Cryptogrphie et Sécurité des Réseaux | 28 | 10 | 18
+M12:Génie Logiciel 26 | 10 | 20
+SEMESTRE 3
+Modules Volume horaire (h)
+Crs | TD | TP | AP
+M13:Deep Learning oO: |) |B
+M14:Virtualisation etCloud Computing | 30 | 9 | 17
+M15: Multimédia Mining ga | TS | Uh
+M16:Web Sémantique 28 | 12 | 16
+M17: Administration Réseaux 30 | 13 | 13
+M18: Entrepreuneuriat 28 | 16 | 12
+SEMESTRE 4
+Modules Valume horaire {h}
+
+Crs | TD | TP | AP
+
+PFE
+
+Stage est |'€quivalent
+de 6 modules,
+il s'effectue durant
+un semestre,
+
+Modules des 4 semestres du Master
+
+

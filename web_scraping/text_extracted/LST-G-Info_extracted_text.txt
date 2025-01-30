@@ -1,0 +1,179 @@
+--- Page 1 ---
+Licence Sciences et Techniques
+
++.OALUE+ OFAE CoACCA Ol AGAMD | HO
+UNIVERSITE SIDI MOHAMED BEN ABDELLAH DE FES
+
+cud Gl Lait)» agutat) ds
++oPEUolt | tC-OGolEl A +OMEREFEL - LO
+FACULTE DES SCIENCES ET TECHNIQUES DE FES
+
+OBJECTIFS DE LA FORMATION
+
+La formation en LST" GENIE INFORMATIQUE " a une
+double vocation. D’un cote, elle offre aux étudiants
+une formation de base polyvalente et pratique en
+informatique leur permettant de s’insérer facilement
+dans le monde du travail. De l'autre coté, elle garantit
+une base solide pour les étudiants qui souhaiteraient
+continuer leurs études en Master ou en cycle
+d’ingénieurs.
+
+La filiére « Génie Informatique » s’inscrit dans la
+politique de modernisation globale de notre pays. En
+effet, elle permet de former les jeunes dans les
+métiers de l’Offshoring devenant un secteur
+stratégique de développement de l'économie du
+Maroc. Cette formation permet d’aider a combler le
+manque remarquable des ressources humaines dans
+ce secteur. La formation est couronnée par un stage
+de deux mois dans l’entreprise, ce qui permet aux
+étudiants de confronter des problemes réels et de
+s initier a |’insertion dans le monde du travail.
+
+WHE, PLPC |
+NA ulapregtioti » wt Leos.
+Wiroafraybicaion |
+VA RUAN oN + a Ue
+
+ew hee
+yom
+Poeniegeaa vee 20h
+On te eal
+
+a
+an eis
+ante
+os
+
+ORGANISATION SEMESTRIELLE DE LA *LST*
+
+La filiere de la Licence en Sciences et Techniques s’étale sur 3
+années et comporte six semestres.
+Elle comporte un tronc commun de 4 semestres sanctionné par
+le (DEUST) et 2 semestres de spécialisation.
+TRONC COMMUN La filiere est organisée comme suit: | —
+
+¢ Un 1° et un 2°" semestre d’initiation et de détermination;
+Le tronc commun Mathématiques, Informatique, * Un 3°" et un 4°"* semestre d’approfondissement ;
+Physique (MIP) constitue les quatre premiers * Un 5°™* et un 6°* semestre de spécialisation adapté au
+semestres de la filiére. caractére scientifique et technique de la Licence.
+
+CONDITIONS D'INSCRIPTION AUX MODULES DE $5 & $6
+
+L'inscription aux modules de S5 est conditionnée par la validation du DEUST sauf dérogation exceptionnelle.
+
+www.fst-usmba.ac.ma
+
+
+--- Page 2 ---
+CONDITIONS D’ACCES / PASSERELLE
+
+Peuvent accéder au semestre S5 des filieres de la LST dans la limite ces places offertes et apres satisfaction des criteres d’admission
+
+précisés dans le descriptif de la filiére ;
+
+- Les étudiants titulaires du DEUST, DEUG, DEUP, DUT, BTS, ou diplome reconnu équivalent obtenus dans des spécialités requises.
+- Les étudiants des classes préparatoires dans les spécialités requises, admissibles au Concours National Commun d’admission dans
+- les établissements de formation d'Ingénieurs et établissements assimilés (ayant validé les épreuves écrites).
+
+ORGANISATION PEDAGOGIQUE DEBOUCHES
+
+LA CYCLE LA LICENCE SCIENCES ET TECHNIQUES (LST)
+
+LICENCE ST
+
+Semestre S6
+
+—N
+wv
+=
+
+©
+
+=
+
+Filiere 3
+Filiere ...
+
+i Filiere n F
+
+Filiére 1
+
+Semestre $5
+
+Semestre S4
+
+Semestre $3
+
+Semestre 52 TRONC COMMUN
+
+(4 semestres}
+
+DEUST
+
+Semestre $1
+
+¢ Une filiere LST est un cursus de formation étalée sur 6 semestres.
+
+¢ Elle comporte un tronc commun de 4 semestres & 2 semestres de spécialisation;
+¢ Chaque semestre comporte 6 modules;
+
+¢ Le volume horaire du module est fixé a 56h d’enseignement et d’évaluation;
+
+FACULTE DES SCIENCES ET TECHNIQUES DE FES
+B.P. 2202 — Route d’Imouzzer — FES
+Tél : 212 (535) 60 80 14 — 212 (535) 60 29 53 — Fax : 212 (535) 60 82 14
+
+www.fst-usmba.ac.ma
+
+Contact : Département Informatique
+Chef du département : Pr. Azeddine ZAHI E-mail : azeddine.zahi@usmba.ac.ma
+Coordonnateur de la filiére : Pr. Fatiha MRABTI E-mail : fatiha.mrabti@usmba.ac.ma
+
+domaine de l’informatique.
+e Chefs de projet informatique dans des établissements
+publics, privés et dans les départements de recherche et
+développement.
+
+e Cadres techniques en réseaux informatique et en
+développement pouvant exercer des fonctions dans le
+
+SEMESTRE 5
+[ Volume horaire {h}
+iomemienn Crs I TD TP | AP
+M25:Architecture des ordinateurs a| | &
+M26: Systemes d’exploitation oF | dae) Te
+M27: Programmation Orientée Objet | 22 | 16 | 18
+en C++
+M28: Base de données 20 | 22] 14
+M29: Réseaux I 36 | 8 R
+M30: Programmation Web 30 18 | 8
+SEMESTRE 6
+Modules Volume horaire (h}
+
+Crs | TD TP | AP
+
+M31: Interface Homme-Machine en Java
+
+28) 8 | 14) 6
+
+M32: Réseaux II
+
+32 | 2 | 18
+
+M33:Modélisation orientée Objet
+en UML
+
+26 | 10 | 20
+
+Projet de fin d’Etudes (PFE)
+
+Stage en entreprise
+équivalent a 3
+modules, effectué
+durant un
+demi semestre
+
+
+

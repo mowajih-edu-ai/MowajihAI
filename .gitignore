@@ -1,0 +1,19 @@
+# Ignore environment configuration files
+.env
+.env.local
+.env.*.local
+
+# Ignore development environment files
+.env.development
+.env.development.local
+
+# Ignore production environment files
+.env.production
+.env.production.local
+
+# Ignore test environment files
+.env.test
+.env.test.local
+
+# Other potential environment files
+*.env

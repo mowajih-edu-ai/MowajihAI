@@ -1,0 +1,134 @@
+--- Page 1 ---
+(IESE)
+
+4
+
+t.OALS+ OFAL CekCLA Ol AOAMHOD | HO
+UNIVERSITE SIDI MOHAMED BEN ABDELLAH DE FES
+
+ald Gl iait)y pg tal) dis
+FoPEUIt | tC.OOolEl AN TOLEXEtE! - HeoO
+FACULTE DES SCIENCES ET TECHNIQUES DE FES
+
+4
+
+‘X
+
+Master Sciences et Techniques
+
+4
+
+INGENIERIE ELECTRIQUE ET SYSTEMES EMBARQUES
+
+OBJECTIFS DE LA FORMATION
+
+Proposer une formation rassemblant les aspects électriques,
+électroniques et systemes embarqués
+
+Former des ingénieurs ou cadres de haut niveau, spécialistes
+en Ingénierie électrique et en systemes embarqués
+Rapprocher les étudiants des notions des motorisations
+électriques, de la gestion de l’énergie dans un véhicule et des
+technologies automobiles
+
+Apprendre aux étudiants certains outils directement utilisés
+dans l'industrie
+
+Former ses jeunes capables de mener a bien des projets en
+intelligence rtificielle, en informatique et systemes
+embarqués
+
+Proposer une formation polyvalente et répondant a un
+sérieux manque dans le marché de cadres spécialistes dans
+ces domaines
+
+Initier les étudiants a la recherche scientifique dans des
+domaines d’actualités et a forte valeur ajoutée
+
+Apprendre aux étudiants le cheminement de bout en bout de
+conception d’un systeme électronique, sa simulation, sa
+réalisation et sa programmation
+
+Apprendre aux étudiants les notions de travail en groupe et
+en équipe et développer leur sens de responsabilité,
+d’autonomie et de management
+
+CONDITIONS D’ACCES
+
+L'accés a cette formation du cycle Master en Sciences
+et Techniques a lieu sur étude de dossier et par voie
+de concours, ouvert aux titulaires de la licence dans
+le domaine de la formation ou d’un diplome reconnu
+équivalent et satisfaisant aux critéres d’admission
+prévus dans le descriptif de la filiére. Les critéres
+d’admission sont proposés par l’équipe pédagogique
+de la fili€re et spécifiés dans le descriptif de cette
+filiére.
+
+
+--- Page 2 ---
+M.S.T : INGENIERIE ELECTRIQUE ET SYSTEMES EMBARQUES (IESE)
+
+DEBOUCHES DE LA FORMATION : sumone
+
+Marché de l'emploi : Modules eee
+1.Les entreprises du secteur de l’électronique et I’électronique embarquée
+
+a. Conception de circuits électronique set leur programmation
+b. Industrie de la microélectronique
+
+c. Conception, programmation et mise en ceuvre des systemes électroniques embarqués M3 : JAVA et Bases de données 28 | 0 | 24
+d. Test et vérification des systemes
+
+M1 : Electronique numérique avancée 2 | 15 | 2
+
+M2 : Circuits électroniques 25 | 15 | 22
+
+2.Les entreprises faisant du développement pour les véhicules électriques, autonomes et [sm ee
+intelligents ds MS : Ingénierie des circuits intégrés 34 | 10 | 8
+a Aéronautique M6 : Outils d'expression et de vn |120/0 0
+communication
+ORGANISATION PEDAGOGIQUE NES —
+Modules
+DU MASTER SCIENCES ET TECHNIQUES (MST) ce [ro | |
+M7 : Technologies WEB et réseaux 32 | 0 20
+5 $1 5 53 MB : Electronique de puissance 30 | 12 | 10
+emestre emestre
+
+| MASTE R ST M9 : Traitement numérique du signal 29 | 8 15
+Semestre S2 Semestre S4
+
+M10 : Linux et Systemes temps réel 24} 0 | 28
+
+A M11:Robotique et commande industrielle) 36 0} 16
+b. Automobile
+(C, Systemes de conduites automatiques M12 : Innovation et entreprenariat 31 |25 | o
+d. Technologie de commun cation dans les véhicules électriques, autonomes et intelligents SEMESTRE 3
+e. Conception basee sur les modeles ———e Volume horaire (hi)
+5 ( A 5 ‘ . Pa C TD TP AP
+3.Les entreprises travaillant dans les secteurs de l’informatique et informatique embarquées “
+3 Développement WEB M13 : Développement mobile 26 | 0 8 | 8
+. : M14 : Intelligence artificielle, Images et
+b. Informatique embarquée applications a (aed [fe
+
+C Intelligence artificielle M15:Electric Traction Motors and 3 12 | 12
+4 if 2 Control Systems
+4.La recherche scientifique appliquée
+
+: : _ Management et Industrie 4.0 32 | 0 0 | 20
+a. Les laboratoires de recherches des secteurs public et privés
+b, Les entreprises de recherche et développement BUS industriels et SOC 2% | 5 | 19
+Projet personnel 26 | O | 14 | 12
+FACULTE DES SCIENCES ET TECHNIQUES DE FES
+My Bra opiate! : SEMESTRE 4
+SS (i) ex P. — Route d’Ilmouzzer — FES vodul Volume horaire (h]
+Swe Tél : 06 61 35 15 74 - Fax : 212 (535) 60 82 14 oaules Cs | 1 | 1 | AP
+| ae | www.fst-usmba.ac.ma
+Contact : Département Génie Electrique Projet de fin d’études (PEE)
+Chef du département : Pr. Hassane EL MARKHI E-mail : hassane.elmarkhi@usmba.ac.ma
+
+Coordonnateur de la filiére : Pr. Ali AHAITOUF E-mail : ali.ahaitouf@usmba.ac.ma
+
+Modules des 4 semestres du Master
+
+

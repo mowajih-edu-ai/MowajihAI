@@ -1,0 +1,214 @@
+--- Page 1 ---
+enieur
+
+er
+
+Cycle Ing
+
+x
+
+~”
+Deen
+—
+ral
+oO
+=
+_
+tl
+”
+—
+=
+=<t
+—4
+=
+>
+=
+=
+o
+oO
+”
+wl
+=
+Waban
+rr)
+—J
+— |
+heded
+—
+=
+wt
+|
+=
+Waal
+a
+”
+>
+~”
+
++.OALUE+ OFAE CokCCA Ol AGAHD | HO
+UNIVERSITE SIDI MOHAMED BEN ABDELLAH DE FES
+
+OBJECTIFS DE LA FORMATION
+
+La filigre SICOM a pour objectif d'assurer la formation
+d'ingénieurs polyvalents rapidement opérationnels dans des
+entreprises qui ont besoin de personnels qualifiés dans le
+domaine des systemes intelligents, mobiles et communicants
+et celui de l'analyse de données.
+
+La formation a également pour objectif |’apport, pour le futur
+ingénieur, des connaissances théeoriques de base mais aussi et
+essentiellement pratiques dans les domaines de
+électronique et informatique embarqués, des
+télécommunications et de l’informatique des réseaux, analyse
+et traitement de grandes masses de données, ainsi que des
+techniques a mettre en ceuvre pour permettre la conception
+et |’installation des systemes intelligents ou des circuits
+électroniques mobiles et communicants.
+
+CONDITIONS D‘ACCES
+
+L'accés en premiére année d'une filiére du cycle Ingénieur est ouvert,
+dans la limite des places disponibles, aux candidats:
+
+* ayant validé les deux années du cycle préparatoire intégré;
+
+* ayant réussi le concours commun des écoles d'ingénieurs;
+
+* ayant réussi le concours d’accés ouvert aux étudiants Bac+2 ou Bact3.
+
+cud Gl Lait) y agtal) ds
+toHEUIlt | tC-OO1lEl A tOlEREtEl - LO
+FACULTE DES SCIENCES ET TECHNIQUES DE FES
+
+DEBOUCHES
+A l'issue de la filiére d’ingénieur SICOM, les lauréats
+s‘orienteront naturellement vers les acteurs du monde
+socio-€conomique de l'analyse et traitement de
+données, des télecommunications, des réseaux, de
+informatique, de I’électronique embarquée et des
+systemes mobiles, intelligents et communicants, au
+premier rang desquels sont :
+
+- Industries de Automobile, ferroviaire, aéronautique,
+naval
+
+- Secteurs des Télécoms
+
+- Sociétés d’Ingénierie
+
+- Sociétés de développement du logiciel embarqué
+
+- Bureau d'études et de conseil
+
+L'acces a une filiére de ce cycle peut se faire en deuxiéme
+année par voie de concours ou par voie d'étude de dossier et
+éventuellement entretien pour les candidats ayant au moins
+un dipléme Bac+3 et satisfaisant les criteres d'admission
+précisés dans le descriptif de la filiére demandée.
+
+www.fst-usmba.ac.ma
+
+
+
+--- Page 2 ---
+C.1: SYSTEMES INTELLIGENTS, COMMUNICANTS ET MOBILES (SICOM)
+
+ORGANISATION PEDAGOGIQUE DU CYCLE INGENIEUR
+
+* Une filiére d’ingénieur s‘étale sur 3 années d’étude (6 semestres)
+
+15 - Cing semestres d’enseignements théoriques et pratiques;
+14 - Le 6€me semestre est consacré au PFE
+
+* Chaque semestre comporte 6 modules;
+
+ele volume horaire minimum du module est 48h d’enseignement et
+d’évaluation;
+
+* Deux stages, avec rapport et soutenance, au minimum sont nécessaires
+durant les quatre premiers semestres. La durée minimale, par année, du stage
+est de 20 jours ouvrables.
+
+el 7
+12
+Dipléme au moins Il
+
+Bac+3 yN
+_ Concours |
+
+Ey
+DEUG, DEUST, DEUP DUT, BTS, CP
+
+SEMESTRE 1 SEMESTRE 2
+
+Volume horaire (h}
+Module eae ad ce Modul
+° . Crs | TD | TP | AP adules
+
+SEMESTRE 3
+
+Volume horaire {h} Modules Volume horaire {h}
+
+Mi: Electronique analogique 26 | 18 | 20 M?: Informatique industrielle M13: Informatique embarquée
+
+M2: Electronique numérique 28 | 20 | 16 MB: Systémes électroniques M14: Processeurs de traitement
+numérique du signal
+
+M3: Traitement du signal et Matlab 32 | 12 | 20 M9: Traitement du signal et de l'image M15: Transmission de données
+
+M146: Capteurs, Instrumentation et
+Conception de cartes numériques
+M17: Bases de données et
+
+Ma: Mathematiques appliquées 40 | 16 | 16 Mi10; Réseaux informatiques
+
+M5: Informatique 30 | 12 | 22 M11: Programmation orientée objet
+
+développement Web
+
+M12: Gestion des entreprises et
+
+M6; Langues et Communication 34 | 22 ; 34 | 22 M18: Langues et Communication 32 | 24
+management de projet
+SEMESTRE 4 SEMESTRE 5 SEMESTRE 6
+Volume horaire (h} Volume horaire (h} Volume horaire {h}
+Modules aia eee Modules 7 Modules aa ey
+M19: Conception des circuits numériques 5 | 15 | 26 M25; Systemes temps-réel et
+et systémes reconfigurables développement android
+M20: Programmation parallele et Interface | 34 | 49 | a9 M26: Réseaux mobiles sans fils
+homme machine Stage est
+M21: Codage source/canal & Parole/Vidéo | 36 | 18 | 14 M27; Communication avancée et protacoles l'équivalent
+
+de communication
+
+M22; Antennes embarquées et circuits
+
+M28: Intelligence artificielle et analyse
+
+PFE
+
+de 6 modules,
+il s'effectue durant
+
+électroniques embarqués | 3 | de données un semestre,
+M23: Projet personnalisé 12 56 M29: Créativité, innovation et séminaires
+
+M24: Gestion de qualité et de yw | 2 M30: Entrepreunariat et management
+
+maintenance stratégique
+
+FACULTE DES SCIENCES ET TECHNIQUES DE FES
+B.P. 2202 — Route d'lmouzzer — FES
+Tél : 212 (535) 60 80 14 - 212 (535) 60 29 53 - Fax : 212 (535) 60 82 14
+
+www. fst-usmba.ac.ma
+
+Contact : Département Génie Electrique
+Chef du département: Pr. Hassane EL MARKHI
+E-mail : hassane.elmarkhi@usmba.ac.ma
+Coordonnateur de la filiére ; Pr. Hicham Ghennioui
+E-mail : hicham.ghennioui@usmba.ac.ma
+
+
+

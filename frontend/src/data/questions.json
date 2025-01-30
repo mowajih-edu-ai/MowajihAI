@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "question": "What is your primary motivation for pursuing a Master's degree?",
+      "type": "text"
+    },
+    {
+      "id": 2,
+      "question": "Which field are you most interested in for your Master's degree?",
+      "type": "dropdown",
+      "options": ["Data Science", "Artificial Intelligence", "Machine Learning", "Big Data", "Other"]
+    },
+    {
+      "id": 3,
+      "question": "What specific areas within AI and Data Science do you want to focus on?",
+      "type": "text"
+    },
+    {
+      "id": 4,
+      "question": "Are you looking for a program with more research or industry-oriented opportunities?",
+      "type": "dropdown",
+      "options": ["Research-Oriented", "Industry-Oriented", "Both"]
+    },
+    {
+      "id": 5,
+      "question": "Would you prefer an online, in-person, or hybrid Master's program?",
+      "type": "dropdown",
+      "options": ["Online", "In-Person", "Hybrid"]
+    },
+    {
+      "id": 6,
+      "question": "Which job roles do you aim for after completing your Master's degree?",
+      "type": "dropdown",
+      "options": ["Data Scientist", "Machine Learning Engineer", "AI Researcher", "Big Data Engineer", "Other"]
+    },
+    {
+      "id": 7,
+      "question": "What industries are you most interested in applying AI or Data Science to?",
+      "type": "text"
+    },
+    {
+      "id": 8,
+      "question": "Are you looking for a program that offers internship or job placement opportunities?",
+      "type": "dropdown",
+      "options": ["Yes", "No", "Not Sure"]
+    },
+    {
+      "id": 9,
+      "question": "Do you have any geographical preferences for your Master's program?",
+      "type": "text"
+    },
+    {
+      "id": 10,
+      "question": "Would you like a program that includes hands-on AI and Data Science projects?",
+      "type": "dropdown",
+      "options": ["Yes", "No"]
+    }
+]  

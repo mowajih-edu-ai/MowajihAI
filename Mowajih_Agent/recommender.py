@@ -12,7 +12,6 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 pinecone_api_key = os.getenv('PINECONE_API_KEY')
 
-# Flask app initialization
 app = Flask(__name__)
 
 def download_hugging_face_embeddings():
@@ -59,13 +58,10 @@ def recommend_program():
         return jsonify({"error": "Failed to initialize Pinecone index"}), 500
 
     try:
-        # Get query embedding
         query_embedding = get_embedding(user_input)
 
-        # Perform similarity search in Pinecone
         results = index.query(vector=query_embedding, top_k=3, include_metadata=True)
 
-        # Format results
         recommendations = []
         for match in results['matches']:
             metadata = match.get('metadata', {})

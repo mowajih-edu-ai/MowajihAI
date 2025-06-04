@@ -13,7 +13,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 pinecone_api_key = os.getenv('PINECONE_API_KEY')
 
-university_programs_dir = 'universityprograms'
+university_programs_dir = 'university_programs'
 programs_data = []
 
 def download_hugging_face_embeddings():
@@ -99,6 +99,7 @@ def vectorize_and_store_programs(index):
                     }]
                 )
                 logging.info(f"Stored embedding for program : {title} with ID: {program_id}")
+                logging.info(f"Description: {description}")
             else:
                 logging.error(f"Failed to get embedding for program: {title}")
     except Exception as e:

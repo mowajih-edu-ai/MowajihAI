@@ -5,20 +5,29 @@ import os
 import base64
 import litellm
 import html
-from crawl4ai import AsyncWebCrawler, CrawlerRunConfig, CacheMode
+from crawl4ai import AsyncWebCrawler, CrawlerRunConfig, CacheMode, PruningContentFilter
 from crawl4ai.deep_crawling import BFSDeepCrawlStrategy
 from crawl4ai.content_scraping_strategy import LXMLWebScrapingStrategy
+from crawl4ai.markdown_generation_strategy import DefaultMarkdownGenerator
+import json
+from urllib.parse import urlparse
+
+
 
 # CONFIGURATIONS 
-URL = "https://www.fsdm.usmba.ac.ma/"
+# URL = "https://www.fsdm.usmba.ac.ma/"
 # URL = "https://www.uca.ma/fr"
 # URL = "https://fst-usmba.ac.ma/"
 # URL = "https://www.tawjihnet.net/"
+URL = "https://www.tawjihnet.net/inscription-cpge-classes-preparatoires-2025-2026/"
 
 MAX_DEPTH = 0 # Set to 0 for unlimited dept
-MAX_PAGES = 20  # Set to 0 for unlimited dept
-SCREENSHOT = False  # Set to True to take screenshots of the pages
+# MAX_PAGES = 20  # Set to 0 for unlimited dept
+SCREENSHOT = True  # Set to True to take screenshots of the pages
+PDF= True  # Set to True to generate PDF files of the pages
 IFRAMES = False  # Set to True to process iframe content
+
+
 
 # CRAWLER CONFIGURATION
 crawler_config = CrawlerRunConfig(
@@ -27,11 +36,15 @@ crawler_config = CrawlerRunConfig(
         # max_pages=MAX_PAGES,
         include_external=False
     ),
-    scraping_strategy=LXMLWebScrapingStrategy(),
+    # scraping_strategy=LXMLWebScrapingStrategy(),
     verbose=True,
     screenshot=SCREENSHOT,
+    pdf=PDF,
     process_iframes=IFRAMES,           # Process iframe content
-    cache_mode=CacheMode.ENABLED,  # Enable caching to avoid re-crawling the same pages
+    cache_mode=CacheMode.BYPASS,  # Enable caching to avoid re-crawling the same pages
+    excluded_tags=['form', 'header', 'aside', 'footer', 'nav', 'svg'],  # Exclude certain tags from scraping
+    exclude_external_images=True,
+    wait_for_images=True,
 )
 
 
@@ -148,6 +161,72 @@ async def crawl_and_filter(URL):
 
         print(f"Crawled {len(results)} pages in total")
 
+        for result in results:
+            # Extract only the path from the URL for filename
+            page_url = result.url
+            parsed_url = urlparse(page_url)
+
+            # Use path, remove leading/trailing slashes, replace '/' with '_'
+            path = parsed_url.path.strip('/').replace('/', '_')
+
+            # If path is empty (homepage), use 'index'
+            filename = (path if path else "index") 
+
+            #create page directory
+            page_dir = os.path.join(output_dir, filename)
+            os.makedirs(page_dir, exist_ok=True)  # Creates the folder if it doesn't exist
+            print(f"Processing page: {page_url} -> {filename}")
+
+            # write the page to html file
+            with open(f"{page_dir}/raw_html.html", "w", encoding='utf-8') as f:
+                print("Writing raw HTML to file...")
+                f.write(result.cleaned_html)
+            with open(f"{page_dir}/cleaned_html.html", "w", encoding='utf-8') as f:
+                print("Writing cleaned HTML to file...")
+                f.write(result.cleaned_html)
+            # write markdown file
+            with open(f"{page_dir}/fit_markdown.md", "w", encoding='utf-8') as f:
+                print("Writing fit markdown to file...")
+                f.write(result.markdown.fit_markdown)
+            with open(f"{page_dir}/raw_markdown.md", "w", encoding='utf-8') as f:
+                print("Writing raw markdown to file...")
+                f.write(result.markdown.raw_markdown)
+
+
+            # Media: write image info to JSON file
+            images_info = result.media.get("images", [])
+            print(f"Found {len(images_info)} images in total.")
+            images_file = f"{page_dir}/images.json"
+            with open(images_file, "w", encoding='utf-8') as img_file:
+                for i, img in enumerate(images_info):  # Inspect just the first 3
+                    print(f"[Image {i}] Found image : {img.get('alt','')}")
+                    # Collect image info in a list of dicts
+                    images_json = []
+                    for i, img in enumerate(images_info):
+                        print(f"[Image {i}] Found image : {img.get('alt','')}")
+                        images_json.append({
+                            "url": img.get("src"),
+                            "alt": img.get("alt", ""),
+                            "score": img.get("score"),
+                            "description": img.get("desc", "")
+                        })
+                    # Write all image info as JSON
+                    json.dump(images_json, img_file, ensure_ascii=False, indent=2)
+            
+            if result.pdf:
+                print(f"PDF available: {result.pdf is not None}")
+                with open(f"{page_dir}/document.pdf", "wb") as f:
+                    f.write(result.pdf)
+            if result.screenshot:
+                print(f"Screenshot available: {result.screenshot is not None}")
+                with open(f"{page_dir}/screenshot.png", "wb") as f:
+                    f.write(base64.b64decode(result.screenshot))
+
+
+
+
+        exit(0)  # Exit early if you just want to save the HTML files
+
         # Access individual results
         with open(f"{output_dir}/sitemap.xml", "w") as sitemap_file:
             for result in results:
@@ -179,23 +258,6 @@ async def crawl_and_filter(URL):
                     os.makedirs(screenshot_dir, exist_ok=True)  # Creates the folder if it doesn't exist
                     with open(f"{screenshot_dir}/ss_{url_to_filename(page_url)}.png", "wb") as f:
                         f.write(base64.b64decode(result.screenshot))
-
-            
-            filtered_links = filter_links_with_ai(
-                internal_links,
-                "formations et programmes de formation",
-            )
-
-            # print total number of filtered links
-            print(f"============================ filtered links: {len(filtered_links)} ==================="+"\n")
-
-            sitemap_file.write("\n")
-            sitemap_file.write("\n")
-            sitemap_file.write("\n")
-            sitemap_file.write(f"============================ filtered links: {len(filtered_links)} ==================="+"\n")
-            for link in filtered_links:
-                print(f"Filtered link: {link['text']} - {link['href']}")
-                sitemap_file.write(f"Filtered link: {link['text']} - {link['href']}\n")
 
 
 if __name__ == "__main__":

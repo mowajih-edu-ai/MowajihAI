@@ -1,0 +1,10 @@
+flask
+flask-cors
+python-dotenv
+langchain
+sentence-transformers
+pinecone
+requests
+langchain_community
+pdf2image
+pytesseract

@@ -1,0 +1,91 @@
+<mxfile host="65bd71144e">
+    <diagram id="hGzMCkr0rmF31cfJUE9q" name="Page-1">
+        <mxGraphModel dx="1033" dy="724" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Title goes here" style="shape=rect;fillColor=#ffffff;strokeColor=#eeeeee;shadow=1;fontColor=#000000;fontSize=23;fontStyle=0;verticalAlign=top;spacingBottom=0;spacingLeft=16;spacingTop=20;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="590" width="300" height="266" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Subtitle here" style="text;fontColor=#999999;fontSize=12;fontStyle=0;verticalAlign=middle;spacingBottom=0;spacingLeft=16;resizeWidth=1;" parent="2" vertex="1">
+                    <mxGeometry width="300" height="20" relative="1" as="geometry">
+                        <mxPoint y="59" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape" style="text;whiteSpace=wrap;fontSize=13;spacing=16;spacingTop=-4;resizeWidth=1;resizeHeight=1;" parent="2" vertex="1">
+                    <mxGeometry width="300" height="148" relative="1" as="geometry">
+                        <mxPoint y="70" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" value="ACTION 1" style="shape=rect;strokeColor=none;fillColor=#ffffff;fontColor=#444444;fontStyle=1;" parent="2" vertex="1">
+                    <mxGeometry y="1" width="70" height="40" relative="1" as="geometry">
+                        <mxPoint x="8" y="-48" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6" value="ACTION 2" style="shape=rect;strokeColor=none;fillColor=#ffffff;fontColor=#444444;fontStyle=1;" parent="2" vertex="1">
+                    <mxGeometry y="1" width="70" height="40" relative="1" as="geometry">
+                        <mxPoint x="86" y="-48" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="N8MJrfmo5K9wlSLJjTvB" name="Page-2">
+        <mxGraphModel dx="1033" dy="724" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="vVrMU5fkDc58EfiZaH-U-1" value="Text" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="360" width="60" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="AvQE_IqC4VQcRQhSeFh6" name="ERD">
+        <mxGraphModel dx="1033" dy="724" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="pZ2xB68M0xKtVGtwhzLn-7" style="edgeStyle=none;html=1;" parent="1" source="pZ2xB68M0xKtVGtwhzLn-1" target="pZ2xB68M0xKtVGtwhzLn-6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="pZ2xB68M0xKtVGtwhzLn-1" value="Student" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="320" width="140" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="pZ2xB68M0xKtVGtwhzLn-2" value="+ Edu Level" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="pZ2xB68M0xKtVGtwhzLn-1" vertex="1">
+                    <mxGeometry y="26" width="140" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="pZ2xB68M0xKtVGtwhzLn-3" value="+ Degrees" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="pZ2xB68M0xKtVGtwhzLn-1" vertex="1">
+                    <mxGeometry y="52" width="140" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="pZ2xB68M0xKtVGtwhzLn-4" value="+ Skills: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="pZ2xB68M0xKtVGtwhzLn-1" vertex="1">
+                    <mxGeometry y="78" width="140" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="pZ2xB68M0xKtVGtwhzLn-5" value="+ Goals: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="pZ2xB68M0xKtVGtwhzLn-1" vertex="1">
+                    <mxGeometry y="104" width="140" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="pZ2xB68M0xKtVGtwhzLn-6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Candidate&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Interests: arr&lt;br&gt;+ Skills: arr&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Goals: arr&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Edu Level&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Degrees&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="110" width="190" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="pZ2xB68M0xKtVGtwhzLn-13" style="edgeStyle=none;html=1;" parent="1" source="pZ2xB68M0xKtVGtwhzLn-8" target="pZ2xB68M0xKtVGtwhzLn-6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="pZ2xB68M0xKtVGtwhzLn-8" value="Professional" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="320" width="140" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="pZ2xB68M0xKtVGtwhzLn-9" value="+ Type: Student, Prof, .." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="pZ2xB68M0xKtVGtwhzLn-8" vertex="1">
+                    <mxGeometry y="26" width="140" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="pZ2xB68M0xKtVGtwhzLn-10" value="+ Interests: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="pZ2xB68M0xKtVGtwhzLn-8" vertex="1">
+                    <mxGeometry y="52" width="140" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="pZ2xB68M0xKtVGtwhzLn-11" value="+ Skills: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="pZ2xB68M0xKtVGtwhzLn-8" vertex="1">
+                    <mxGeometry y="78" width="140" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="pZ2xB68M0xKtVGtwhzLn-12" value="+ Goals: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="pZ2xB68M0xKtVGtwhzLn-8" vertex="1">
+                    <mxGeometry y="104" width="140" height="26" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

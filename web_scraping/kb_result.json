@@ -1,0 +1,228 @@
+[
+    {
+        "entities": [
+            {
+                "name": "Cookie Notice",
+                "description": "من أجل تصفح أفضل للموقع ، نستعمل ملفات الارتباط الكوكيز، لمزيد من التفاصيل بصفحة سياسية الخصوصية"
+            },
+            {
+                "name": "OK",
+                "description": "Accept cookie notice"
+            }
+        ],
+        "relationships": [
+            {
+                "entity1": {
+                    "name": "Cookie Notice",
+                    "description": "من أجل تصفح أفضل للموقع ، نستعمل ملفات الارتباط الكوكيز، لمزيد من التفاصيل بصفحة سياسية الخصوصية"
+                },
+                "entity2": {
+                    "name": "OK",
+                    "description": "Accept cookie notice"
+                },
+                "description": "User can accept cookie notice by clicking OK",
+                "relation_type": "acceptance"
+            }
+        ],
+        "error": false
+    },
+    {
+        "entities": [
+            {
+                "name": "الرئيسية",
+                "description": "accueil"
+            },
+            {
+                "name": "منتدى توجيه نت",
+                "description": "Forum"
+            },
+            {
+                "name": "الباك",
+                "description": "Bac"
+            },
+            {
+                "name": "الطلبة",
+                "description": "Etudaint"
+            },
+            {
+                "name": "أقل من الباك",
+                "description": "Niveau"
+            },
+            {
+                "name": "من نحن",
+                "description": "Tawjihnet"
+            },
+            {
+                "name": "الاتصال بنا",
+                "description": "contact"
+            }
+        ],
+        "relationships": [
+            {
+                "entity1": {
+                    "name": "الرئيسية",
+                    "description": "accueil"
+                },
+                "entity2": {
+                    "name": "من نحن",
+                    "description": "Tawjihnet"
+                },
+                "description": "Navigation menu items",
+                "relation_type": "navigation"
+            }
+        ],
+        "error": false
+    },
+    {
+        "index": 1,
+        "error": true,
+        "tags": [
+            "error"
+        ],
+        "content": "'str' object has no attribute 'choices'"
+    },
+    {
+        "entities": [
+            {
+                "name": "ISCAE Casa",
+                "description": "Institut supérieur de commerce et d’administration des entreprises"
+            },
+            {
+                "name": "Concours Licence ISCAE",
+                "description": "Competition for access to 1st year of license at ISCAE"
+            },
+            {
+                "name": "Baccalauréat",
+                "description": "Required diploma for candidates (Scientific or Economic)"
+            }
+        ],
+        "relationships": [
+            {
+                "entity1": {
+                    "name": "ISCAE Casa",
+                    "description": "Institut supérieur de commerce et d’administration des entreprises"
+                },
+                "entity2": {
+                    "name": "Concours Licence ISCAE",
+                    "description": "Competition for access to 1st year of license at ISCAE"
+                },
+                "description": "ISCAE organizes the competition for license access",
+                "relation_type": "organizes"
+            },
+            {
+                "entity1": {
+                    "name": "Concours Licence ISCAE",
+                    "description": "Competition for access to 1st year of license at ISCAE"
+                },
+                "entity2": {
+                    "name": "Baccalauréat",
+                    "description": "Required diploma for candidates (Scientific or Economic)"
+                },
+                "description": "Competition requires Baccalauréat diploma",
+                "relation_type": "requires"
+            }
+        ],
+        "error": false
+    },
+    {
+        "entities": [
+            {
+                "name": "Online Registration",
+                "description": "Registration process for the competition"
+            },
+            {
+                "name": "MASSAR code",
+                "description": "Unique reference for Moroccan baccalaureate students"
+            }
+        ],
+        "relationships": [
+            {
+                "entity1": {
+                    "name": "Concours Licence ISCAE",
+                    "description": "Competition for access to 1st year of license at ISCAE"
+                },
+                "entity2": {
+                    "name": "Online Registration",
+                    "description": "Registration process for the competition"
+                },
+                "description": "Competition requires online registration",
+                "relation_type": "requires"
+            },
+            {
+                "entity1": {
+                    "name": "Online Registration",
+                    "description": "Registration process for the competition"
+                },
+                "entity2": {
+                    "name": "MASSAR code",
+                    "description": "Unique reference for Moroccan baccalaureate students"
+                },
+                "description": "Registration requires MASSAR code for Moroccan students",
+                "relation_type": "requires"
+            }
+        ],
+        "error": false
+    },
+    {
+        "entities": [
+            {
+                "name": "Written Tests",
+                "description": "English, General Culture in French, and Mathematics exams"
+            },
+            {
+                "name": "Oral Tests",
+                "description": "Individual interviews in French and English"
+            }
+        ],
+        "relationships": [
+            {
+                "entity1": {
+                    "name": "Concours Licence ISCAE",
+                    "description": "Competition for access to 1st year of license at ISCAE"
+                },
+                "entity2": {
+                    "name": "Written Tests",
+                    "description": "English, General Culture in French, and Mathematics exams"
+                },
+                "description": "Competition includes written tests",
+                "relation_type": "includes"
+            },
+            {
+                "entity1": {
+                    "name": "Concours Licence ISCAE",
+                    "description": "Competition for access to 1st year of license at ISCAE"
+                },
+                "entity2": {
+                    "name": "Oral Tests",
+                    "description": "Individual interviews in French and English"
+                },
+                "description": "Competition includes oral tests for eligible candidates",
+                "relation_type": "includes"
+            }
+        ],
+        "error": false
+    },
+    {
+        "entities": [
+            {
+                "name": "Tawjihnet",
+                "description": "Orientation platform providing information about the competition"
+            }
+        ],
+        "relationships": [
+            {
+                "entity1": {
+                    "name": "Tawjihnet",
+                    "description": "Orientation platform providing information about the competition"
+                },
+                "entity2": {
+                    "name": "Concours Licence ISCAE",
+                    "description": "Competition for access to 1st year of license at ISCAE"
+                },
+                "description": "Tawjihnet provides information about the competition",
+                "relation_type": "provides_information_about"
+            }
+        ],
+        "error": false
+    }
+]

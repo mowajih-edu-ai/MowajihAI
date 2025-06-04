@@ -17,3 +17,11 @@
 
 # Other potential environment files
 *.env
+
+## ignore scraped content inside the webscraping directory
+web_scraping/c4ai/scraped/*
+web_scraping/c4ai/downloads/*
+web_scraping/c4ai/c4ai_results_html/*
+web_scraping/pdf_fst_fes/*
+web_scraping/text_extracted/*
+text_extracted/*

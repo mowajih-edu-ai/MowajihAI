@@ -15,13 +15,13 @@ from urllib.parse import urlparse
 
 
 # CONFIGURATIONS 
-# URL = "https://www.fsdm.usmba.ac.ma/"
+# URL = "https://www.fsdm.usmba.ac.ma"
 # URL = "https://www.uca.ma/fr"
-# URL = "https://fst-usmba.ac.ma/"
-# URL = "https://www.tawjihnet.net/"
-URL = "https://www.tawjihnet.net/inscription-cpge-classes-preparatoires-2025-2026/"
+# URL = "https://fst-usmba.ac.ma"
+URL = "https://www.tawjihnet.net"
+# URL = "https://www.tawjihnet.net/inscription-cpge-classes-preparatoires-2025-2026/"
 
-MAX_DEPTH = 0 # Set to 0 for unlimited dept
+MAX_DEPTH = 1 # Set to 0 for unlimited dept
 # MAX_PAGES = 20  # Set to 0 for unlimited dept
 SCREENSHOT = True  # Set to True to take screenshots of the pages
 PDF= True  # Set to True to generate PDF files of the pages
@@ -61,7 +61,8 @@ def url_to_filename(url):
 
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
-output_dir = os.path.join(script_dir, 'scraped', url_to_filename(URL))
+hostname = urlparse(URL).hostname
+output_dir = os.path.join(script_dir, 'scraped', url_to_filename(hostname))
 os.makedirs(output_dir, exist_ok=True) # Creates the folder if it doesn't exist
 
 
@@ -156,108 +157,107 @@ async def crawl_and_filter(URL):
 
     internal_links = {}  # Dictionary to store internal links for each page
 
-    async with AsyncWebCrawler() as crawler:
-        results = await crawler.arun(URL, config=crawler_config)
+    try:
+        async with AsyncWebCrawler() as crawler:
+            results = await crawler.arun(URL, config=crawler_config)
 
-        print(f"Crawled {len(results)} pages in total")
+            print(f"Crawled {len(results)} pages in total")
 
-        for result in results:
-            # Extract only the path from the URL for filename
-            page_url = result.url
-            parsed_url = urlparse(page_url)
-
-            # Use path, remove leading/trailing slashes, replace '/' with '_'
-            path = parsed_url.path.strip('/').replace('/', '_')
-
-            # If path is empty (homepage), use 'index'
-            filename = (path if path else "index") 
-
-            #create page directory
-            page_dir = os.path.join(output_dir, filename)
-            os.makedirs(page_dir, exist_ok=True)  # Creates the folder if it doesn't exist
-            print(f"Processing page: {page_url} -> {filename}")
-
-            # write the page to html file
-            with open(f"{page_dir}/raw_html.html", "w", encoding='utf-8') as f:
-                print("Writing raw HTML to file...")
-                f.write(result.cleaned_html)
-            with open(f"{page_dir}/cleaned_html.html", "w", encoding='utf-8') as f:
-                print("Writing cleaned HTML to file...")
-                f.write(result.cleaned_html)
-            # write markdown file
-            with open(f"{page_dir}/fit_markdown.md", "w", encoding='utf-8') as f:
-                print("Writing fit markdown to file...")
-                f.write(result.markdown.fit_markdown)
-            with open(f"{page_dir}/raw_markdown.md", "w", encoding='utf-8') as f:
-                print("Writing raw markdown to file...")
-                f.write(result.markdown.raw_markdown)
-
-
-            # Media: write image info to JSON file
-            images_info = result.media.get("images", [])
-            print(f"Found {len(images_info)} images in total.")
-            images_file = f"{page_dir}/images.json"
-            with open(images_file, "w", encoding='utf-8') as img_file:
-                for i, img in enumerate(images_info):  # Inspect just the first 3
-                    print(f"[Image {i}] Found image : {img.get('alt','')}")
-                    # Collect image info in a list of dicts
-                    images_json = []
-                    for i, img in enumerate(images_info):
-                        print(f"[Image {i}] Found image : {img.get('alt','')}")
-                        images_json.append({
-                            "url": img.get("src"),
-                            "alt": img.get("alt", ""),
-                            "score": img.get("score"),
-                            "description": img.get("desc", "")
-                        })
-                    # Write all image info as JSON
-                    json.dump(images_json, img_file, ensure_ascii=False, indent=2)
-            
-            if result.pdf:
-                print(f"PDF available: {result.pdf is not None}")
-                with open(f"{page_dir}/document.pdf", "wb") as f:
-                    f.write(result.pdf)
-            if result.screenshot:
-                print(f"Screenshot available: {result.screenshot is not None}")
-                with open(f"{page_dir}/screenshot.png", "wb") as f:
-                    f.write(base64.b64decode(result.screenshot))
-
-
-
-
-        exit(0)  # Exit early if you just want to save the HTML files
-
-        # Access individual results
-        with open(f"{output_dir}/sitemap.xml", "w") as sitemap_file:
             for result in results:
-                # extract values
-                page_url = result.url            
-                depth = result.metadata.get('depth', 0)
-                internal_links[page_url] = result.links.get('internal',[]) 
+                # Extract only the path from the URL for filename
+                page_url = result.url
+                path = "index" if urlparse(page_url).path in ('/' or '') else url_to_filename(urlparse(page_url).path)
+
+                # If path is empty (homepage), use 'index'
+                filename = (path if path else "index") 
+
+                #create page directory
+                page_dir = os.path.join(output_dir, filename)
+                os.makedirs(page_dir, exist_ok=True)  # Creates the folder if it doesn't exist
+                print(f"Processing page: {page_url} -> {filename}")
+
+                # # write the page to html file
+                # with open(f"{page_dir}/raw_html.html", "w", encoding='utf-8') as f:
+                #     print("Writing raw HTML to file...")
+                #     f.write(result.cleaned_html)
+                # with open(f"{page_dir}/cleaned_html.html", "w", encoding='utf-8') as f:
+                #     print("Writing cleaned HTML to file...")
+                #     f.write(result.cleaned_html)
+                # # write markdown file
+                # with open(f"{page_dir}/fit_markdown.md", "w", encoding='utf-8') as f:
+                #     print("Writing fit markdown to file...")
+                #     f.write(result.markdown.fit_markdown)
+                # with open(f"{page_dir}/raw_markdown.md", "w", encoding='utf-8') as f:
+                #     print("Writing raw markdown to file...")
+                #     f.write(result.markdown.raw_markdown)
+
+
+                # # Media: write image info to JSON file
+                # images_info = result.media.get("images", [])
+                # print(f"Found {len(images_info)} images in total.")
+                # images_file = f"{page_dir}/images.json"
+                # with open(images_file, "w", encoding='utf-8') as img_file:
+                #     for i, img in enumerate(images_info):  # Inspect just the first 3
+                #         print(f"[Image {i}] Found image : {img.get('alt','')}")
+                #         # Collect image info in a list of dicts
+                #         images_json = []
+                #         for i, img in enumerate(images_info):
+                #             print(f"[Image {i}] Found image : {img.get('alt','')}")
+                #             images_json.append({
+                #                 "url": img.get("src"),
+                #                 "alt": img.get("alt", ""),
+                #                 "score": img.get("score"),
+                #                 "description": img.get("desc", "")
+                #             })
+                #         # Write all image info as JSON
+                #         json.dump(images_json, img_file, ensure_ascii=False, indent=2)
                 
-                print(f"URL: {page_url} Depth: {depth}")
-
-                # Process links
-                sitemap_file.write(" Depth : " + str(depth) + " : URL : " + page_url + "\n")
-                for link in result.links.get('internal', []):
-                    # Defensive: check if link is a dict and has 'href'
-                    if not isinstance(link, dict) or 'href' not in link:
-                        print(f"Warning: Skipping malformed link: {link}")
-                        continue
-                    if not link['href']:
-                        print(f"Warning: Link without href found on {page_url}: {link}")
-                        continue
-                    print(f"Internal link: {link['href']}")
-                    sitemap_file.write("   |__ " + " TEXT : " + link['text'] +" - " + link['title'] + " Link : " + link['href'] + "\n")
-
-
-                # sitemap_file.write(" Depth : " + str(depth) + " : URL : " + page_url + "\n")
+                # if result.pdf:
+                #     print(f"PDF available: {result.pdf is not None}")
+                #     with open(f"{page_dir}/document.pdf", "wb") as f:
+                #         f.write(result.pdf)
                 if result.screenshot:
                     print(f"Screenshot available: {result.screenshot is not None}")
-                    screenshot_dir = f"{output_dir}/screenshots"
-                    os.makedirs(screenshot_dir, exist_ok=True)  # Creates the folder if it doesn't exist
-                    with open(f"{screenshot_dir}/ss_{url_to_filename(page_url)}.png", "wb") as f:
+                    with open(f"{page_dir}/screenshot.png", "wb") as f:
                         f.write(base64.b64decode(result.screenshot))
+    except Exception as e:
+        print(f"An error occurred during crawling: {e}")
+
+
+
+        #     exit(0)  # Exit early if you just want to save the HTML files
+
+        # # Access individual results
+        # with open(f"{output_dir}/sitemap.xml", "w") as sitemap_file:
+        #     for result in results:
+        #         # extract values
+        #         page_url = result.url            
+        #         depth = result.metadata.get('depth', 0)
+        #         internal_links[page_url] = result.links.get('internal',[]) 
+                
+        #         print(f"URL: {page_url} Depth: {depth}")
+
+        #         # Process links
+        #         sitemap_file.write(" Depth : " + str(depth) + " : URL : " + page_url + "\n")
+        #         for link in result.links.get('internal', []):
+        #             # Defensive: check if link is a dict and has 'href'
+        #             if not isinstance(link, dict) or 'href' not in link:
+        #                 print(f"Warning: Skipping malformed link: {link}")
+        #                 continue
+        #             if not link['href']:
+        #                 print(f"Warning: Link without href found on {page_url}: {link}")
+        #                 continue
+        #             print(f"Internal link: {link['href']}")
+        #             sitemap_file.write("   |__ " + " TEXT : " + link['text'] +" - " + link['title'] + " Link : " + link['href'] + "\n")
+
+
+        #         # sitemap_file.write(" Depth : " + str(depth) + " : URL : " + page_url + "\n")
+        #         if result.screenshot:
+        #             print(f"Screenshot available: {result.screenshot is not None}")
+        #             screenshot_dir = f"{output_dir}/screenshots"
+        #             os.makedirs(screenshot_dir, exist_ok=True)  # Creates the folder if it doesn't exist
+        #             with open(f"{screenshot_dir}/ss_{url_to_filename(page_url)}.png", "wb") as f:
+        #                 f.write(base64.b64decode(result.screenshot))
 
 
 if __name__ == "__main__":

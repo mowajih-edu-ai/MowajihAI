@@ -1,7 +1,9 @@
 
+
 ## TODO
 * Scrap ALL the URLs with C4AI and then ask AI to filter them
 * Screenshot to text ---> OCR!!!!!!!!!
+* SCRAPING PROJECT WON'T FORM PART OF THE DEPLOYABLE PACKAGE!!!!! Could I come up with a clever way of automating the scraping process and even ditribute its computation resources on free tiers?
 
 ## Brainstorming
 * Basic info like what is a Faculty and so on
